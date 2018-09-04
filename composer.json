@@ -1,0 +1,14 @@
+{
+    "name": "cedric-anne/glpipluginsandbox",
+    "type": "glpi-plugin",
+    "require": {
+        "php": ">= 5.6.0",
+
+        "twig/twig": "^1.35"
+    },
+    "config": {
+        "platform": {
+            "php": "5.6"
+        }
+    }
+}

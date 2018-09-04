@@ -36,6 +36,21 @@ function plugin_version_glpipluginsandbox() {
 }
 
 /**
+ * Check pre-requisites before install.
+ *
+ * @return boolean
+ */
+function plugin_glpipluginsandbox_check_prerequisites() {
+
+   if (!class_exists('Twig_Parser')) {
+      echo 'Unable to find Twig_Parser class.';
+      return false;
+   }
+
+   return true;
+}
+
+/**
  * Check configuration process
  *
  * @param boolean $verbose Whether to display message on failure. Defaults to false.
